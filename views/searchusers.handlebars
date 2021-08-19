@@ -1,0 +1,16 @@
+<h1>
+
+</h1>
+
+<div class="container-fluid">
+    {{#if error}} <span>{{error}}</span>{{/if}}
+    <form  class="row g-3" method="POST" action="/user/search">
+        <div class="col-md-6">
+            <label for="id" class="form-label">Search Users</label>
+            <input type="text" name="id" class="form-control" placeholder="User123">
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </form>
+</div>
